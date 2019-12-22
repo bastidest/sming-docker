@@ -18,6 +18,11 @@ flash:
 configure:
 	docker stop $(CONTAINER_NAME) || true
 	docker rm $(CONTAINER_NAME) || true
+
+	git submodule init
+	git submodule update
+	cd ./libs/u8g2/u8g2 && git apply ../u8g2.patch
+
 	docker run\
 	 -d\
 	 --init\

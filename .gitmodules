@@ -1,3 +1,4 @@
 [submodule "Libraries.u8g2"]
 	path = libs/u8g2/u8g2
 	url = https://github.com/olikraus/u8g2.git
+	ignore = dirty
