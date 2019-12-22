@@ -3,32 +3,11 @@
 ## Uncomment and change examples:
 
 ## Add your source directories here separated by space
-# COMPONENT_SRCDIRS := ./libs/u8g2/cppsrcp
-COMPONENT_SRCFILES := \
-	./libs/u8g2/cppsrc/U8g2lib.cpp\
-	./libs/u8g2/cppsrc/U8x8lib.cpp\
-	./libs/u8g2/csrc/u8g2_setup.c\
-	./libs/u8g2/csrc/u8g2_font.c\
-	./libs/u8g2/csrc/u8g2_fonts.c\
-	./libs/u8g2/csrc/u8g2_intersection.c\
-	./libs/u8g2/csrc/u8g2_buffer.c\
-	./libs/u8g2/csrc/u8g2_hvline.c\
-	./libs/u8g2/csrc/u8g2_ll_hvline.c\
-	./libs/u8g2/csrc/u8g2_cleardisplay.c\
-	./libs/u8g2/csrc/u8g2_d_memory.c\
-	./libs/u8g2/csrc/u8g2_d_setup.c\
-	./libs/u8g2/csrc/u8x8_setup.c\
-	./libs/u8g2/csrc/u8x8_8x8.c\
-	./libs/u8g2/csrc/u8x8_display.c\
-	./libs/u8g2/csrc/u8x8_byte.c\
-	./libs/u8g2/csrc/u8x8_gpio.c\
-	./libs/u8g2/csrc/u8x8_cad.c\
-	./libs/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.c\
-
-COMPONENT_INCDIRS := ./libs/u8g2/cppsrc ./libs/u8g2/csrc
+# COMPONENT_SRCDIRS := app
+# COMPONENT_SRCFILES :=
 
 ## If you require any Libraries list them here
-# ARDUINO_LIBRARIES := U8g2lib
+ARDUINO_LIBRARIES := u8g2
 
 ## List the names of any additional Components required for this project
 # COMPONENT_DEPENDS :=
@@ -40,10 +19,10 @@ COMPONENT_INCDIRS := ./libs/u8g2/cppsrc ./libs/u8g2/csrc
 # CUSTOM_TARGETS += 
 
 ## Additional object files to be included with the application library
-# EXTRA_OBJ := U8g2lib
+# EXTRA_OBJ :=
 
 ## Additional libraries to be linked into the project
-# EXTRA_LIBS := U8g2lib
+# EXTRA_LIBS :=
 
 ## Provide any additional compiler flags
 # COMPONENT_CFLAGS :=

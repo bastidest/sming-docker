@@ -1,0 +1,13 @@
+diff --git a/cppsrc/U8x8lib.cpp b/cppsrc/U8x8lib.cpp
+index 3e16cf6b..9619d949 100644
+--- a/cppsrc/U8x8lib.cpp
++++ b/cppsrc/U8x8lib.cpp
+@@ -771,7 +771,7 @@ extern "C" uint8_t u8x8_byte_arduino_hw_spi(u8x8_t *u8x8, uint8_t msg, uint8_t a
+ 	case 3: internal_spi_mode = SPI_MODE3; break;
+       }
+       
+-#if ARDUINO >= 10600
++#if ARDUINO >= 0
+       SPI.beginTransaction(SPISettings(u8x8->bus_clock, MSBFIRST, internal_spi_mode));
+ #else
+       SPI.begin();
